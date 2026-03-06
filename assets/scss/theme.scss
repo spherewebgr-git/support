@@ -65,6 +65,13 @@ body {
     }
   }
   #ClientPage {
+    .agent-login {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      text-align: center;
+      color: $colour3;
+    }
     .sidebar {
       background: #04005A;
       background-image: url(../images/sidebar-graphic.svg);
@@ -115,6 +122,16 @@ body {
           position: sticky;
           top: 0;
           width: 100%;
+          justify-content: space-between;
+          .header-left {
+            width: 100%;
+          }
+          .header-right {
+            display: flex;
+            width: 45%;
+            align-items: center;
+            justify-content: flex-end;
+          }
           .support-btn {
             margin-right: 35px;
             &.sign-in {
@@ -125,7 +142,6 @@ body {
             margin: 0 20px;
             &-gr {
               margin-right: 5px;
-              margin-left: 75px;
             }
             &-us {
               margin-left: 5px;
@@ -133,9 +149,30 @@ body {
           }
         }
         &--body {
-          max-height: 85vh;
+          height: 85vh;
           overflow-x: hidden;
+          overflow-y: auto;
           padding-left: 80px;
+          img.quote {
+            margin: 90px 0 0 0;
+          }
+          h1 {
+            font-size: 65px;
+            font-weight: 300;
+            line-height: 80px;
+            color: $colour3;
+            margin: 42px 0 120px 0;
+            letter-spacing: 2px;
+          }
+          .btn-container {
+            display: flex;
+            margin: 30px 0 0 0;
+            a.support-btn {
+              margin-right: 32px;
+              font-size: 16px;
+            }
+          }
+
         }
       }
     }
