@@ -69,8 +69,19 @@ body {
       position: fixed;
       right: 20px;
       bottom: 20px;
-      text-align: center;
-      color: $colour3;
+      a {
+        color: $colour3;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 800;
+        text-decoration: none;
+        span {
+          display: inline-block;
+          margin-top: 8px;
+        }
+      }
     }
     .sidebar {
       background: #04005A;
@@ -154,7 +165,7 @@ body {
           overflow-y: auto;
           padding-left: 80px;
           img.quote {
-            margin: 90px 0 0 0;
+            margin: 68px 0 0 0;
           }
           h1 {
             font-size: 65px;
