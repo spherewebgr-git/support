@@ -26,12 +26,17 @@ body {
       background-color: $white;
       height: 100vh;
       .branding {
-        background-color: $colour1;
+        background-color: transparent;
         height: 100vh;
+        position: relative;
+        left: -18%;
       }
       .main-content {
-        background-color: $grey;
+        background-color: $white;
         height: 100vh;
+        position: relative;
+        left: -18%;
+        width: 82%;
       }
     }
   }
