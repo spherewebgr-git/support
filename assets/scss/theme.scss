@@ -16,9 +16,28 @@ body {
     font-family: $roboto;
 
   }
+  img {
+    max-width: 100%;
+  }
+  .support-btn {
+    text-decoration: none;
+    color: $colour3;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 16px 67px;
+    border: 1px solid $colour3;
+    border-radius: 3px;
+    &.img-btn {
+      padding: 13px 25px;
+    }
+  }
   #ClientPage {
     .sidebar {
-      background-color: $colour3;
+      background: #04005A;
+      background-image: url(../images/sidebar-graphic.svg);
+      background-image: url(../images/sidebar-graphic.svg), linear-gradient(180deg,rgba(4, 0, 90, 1) 0%, rgba(11, 0, 194, 1) 100%);
+      background-size: 1300px, auto;
+      background-position: 55px -425px, center;
       height: 100vh;
       color: $white;
     }
@@ -30,6 +49,21 @@ body {
         height: 100vh;
         position: relative;
         left: -18%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .support-logo {
+          margin-top: 110px;
+          margin-right: 24px;
+
+        }
+        .creators-logos {
+          .egov-logo {
+            margin: 15px 0 25px 0;
+          }
+        }
+
       }
       .main-content {
         background-color: $white;
@@ -37,6 +71,25 @@ body {
         position: relative;
         left: -18%;
         width: 82%;
+        max-height: 100vh;
+        overflow: hidden;
+
+        &--header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 35px;
+          padding: 54px 0 54px 100px;
+          background-color: $white;
+          position: sticky;
+          top: 0;
+          width: 100%;
+        }
+        &--body {
+          max-height: 85vh;
+          overflow-x: hidden;
+          padding-left: 100px;
+        }
       }
     }
   }

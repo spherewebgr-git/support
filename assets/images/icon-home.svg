@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="boxicons-interface-icons-home-smile" transform="translate(-2 -2)">
+    <path id="Path_27353" data-name="Path 27353" d="M3,13H4v7a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V13h1a1,1,0,0,0,.707-1.707l-9-9a1,1,0,0,0-1.414,0l-9,9A1,1,0,0,0,3,13Zm9-8.586,6,6V20H6V10.414Z" fill="#050060"/>
+    <path id="Path_27354" data-name="Path 27354" d="M12,18a5.4,5.4,0,0,0,4.95-3.689l-1.9-.621A3.419,3.419,0,0,1,12,16a3.409,3.409,0,0,1-3.051-2.316l-1.9.627A5.4,5.4,0,0,0,12,18Z" fill="#050060"/>
+  </g>
+</svg>
