@@ -1,7 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+
+$white : #FFFFFF;
+$grey : #686C72;
+$green : #61C765;
+$colour1 : #204686;
+$colour2 : #0B00C4;
+$colour3 : #050060;
+$colour4 : #040059;
+
+$roboto : "Roboto Flex", sans-serif;
+
 body {
-  background-color: #ffffff;
+  background-color: $white;
   & * {
-    font-family: "Roboto Flex", sans-serif;
+    font-family: $roboto;
+
+  }
+  #ClientPage {
+    .sidebar {
+      background-color: $colour3;
+      height: 100vh;
+      color: $white;
+    }
+    .content {
+      background-color: $white;
+      height: 100vh;
+      .branding {
+        background-color: $colour1;
+        height: 100vh;
+      }
+      .main-content {
+        background-color: $grey;
+        height: 100vh;
+      }
+    }
   }
 }
