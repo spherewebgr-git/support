@@ -10,6 +10,8 @@ $colour4 : #040059;
 
 $roboto : "Roboto Flex", sans-serif;
 
+$transition : all 0.25s linear;
+
 body {
   background-color: $white;
   & * {
@@ -24,11 +26,42 @@ body {
     color: $colour3;
     font-size: 12px;
     font-weight: bold;
-    padding: 16px 67px;
+    padding: 14px 60px;
     border: 1px solid $colour3;
-    border-radius: 3px;
+    border-radius: 5px;
+    background-color: $white;
+    transition: $transition;
+    &:hover {
+      background-color: $colour3;
+      color: $white;
+      transition: $transition;
+    }
     &.img-btn {
       padding: 13px 25px;
+      transition: $transition;
+      &:hover {
+        background-color: $colour3;
+        transition: $transition;
+        & img {
+          filter: brightness(0) invert(1);
+          transition: $transition;
+        }
+      }
+    }
+    &.sign-in {
+      padding: 16px 27px;
+      display: flex;
+      gap: 19px;
+      border: none;
+      transition: $transition;
+      &:hover {
+        background-color: $colour3;
+        transition: $transition;
+        & img {
+          filter: brightness(0) invert(1);
+          transition: $transition;
+        }
+      }
     }
   }
   #ClientPage {
@@ -76,19 +109,33 @@ body {
 
         &--header {
           display: flex;
-          justify-content: space-between;
           align-items: center;
-          gap: 35px;
-          padding: 54px 0 54px 100px;
+          padding: 54px 0 54px 80px;
           background-color: $white;
           position: sticky;
           top: 0;
           width: 100%;
+          .support-btn {
+            margin-right: 35px;
+            &.sign-in {
+              margin-right: 0;
+            }
+          }
+          .flag {
+            margin: 0 20px;
+            &-gr {
+              margin-right: 5px;
+              margin-left: 75px;
+            }
+            &-us {
+              margin-left: 5px;
+            }
+          }
         }
         &--body {
           max-height: 85vh;
           overflow-x: hidden;
-          padding-left: 100px;
+          padding-left: 80px;
         }
       }
     }
