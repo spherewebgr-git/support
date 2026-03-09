@@ -112,6 +112,7 @@ body {
       height: 100vh;
       color: $white;
     }
+
     .content {
       background-color: $white;
       height: 100vh;
@@ -187,6 +188,162 @@ body {
           &.inner-page {
             h1 {
               margin-bottom: 30px;
+            }
+            #ticketInfo {
+              border-bottom: 1px solid #707070;
+              table {
+                > tr:nth-child(2) {
+                 > td {
+
+                  }
+                }
+              }
+            }
+            table {
+              tr {
+                td {
+                  &.headline {
+                    color: $colour3;
+                    font-weight: 600;
+                    padding-bottom: 20px;
+                  }
+                  h1 {
+                    display: flex;
+                    position: relative;
+                    align-items: baseline;
+                    padding-bottom: 55px;
+                    gap: 12px;
+                    border-bottom: 1px solid #707070;
+                    b {
+                      order: 2;
+                      font-size: 20px;
+                      color: $colour3;
+                    }
+                    a {
+                      order: 3;
+                    }
+                    small {
+                      order: 1;
+                    }
+                    .pull-right {
+                      position: absolute;
+                      top: 50px;
+                    }
+                  }
+                  a.action-button {
+                    text-decoration: none;
+                    color: $colour3;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 14px 36px;
+                    border: 1px solid $colour3;
+                    border-radius: 5px;
+                    background-color: $white;
+                    transition: $transition;
+                    i {
+
+                    }
+                  }
+                  table {
+                    tr {
+                      &:last-child {
+                        td, th {
+                          padding-bottom: 15px;
+                        }
+                      }
+                      th {
+                        color: $grey;
+                        width: 30%;
+                        min-width: 119px;
+                      }
+                      td {
+                        color: $grey;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            #ticketThread {
+              .thread-event {
+                &.action {
+
+                }
+              }
+              & [id^="thread-entry-"] {
+                margin-bottom: 2rem;
+                .thread-entry {
+                  &.response {
+                    & .header {
+                      background-color: $colour3;
+                      color: #ffffff;
+                      & .textra {
+                        right: -6px;
+                        left: auto;
+                        transform: rotate(225deg);
+                        background-color: $colour3;
+                      }
+                    }
+                    & .thread-body {
+                      margin-left: 0;
+                    }
+                    & .avatar {
+                      margin-top: 3px;
+                      position: relative;
+                      left: -46px;
+                      top: 3px;
+                    }
+                  }
+                  & .avatar {
+                    margin-top: 3px;
+                  }
+                  .header {
+                    color: $colour3;
+                    display: inline-block;
+                    width: 85%;
+                    font-size: 0;
+                    padding: 23px 37px;
+                    border: thin solid #050060;
+                    border-radius: 5px 5px 0 0;
+                    position: relative;
+                    & b {
+                      font-size: 16px;
+                      float: left;
+                    }
+                    & time {
+                      font-size: 16px;
+                      float: right;
+                    }
+                    & .textra {
+                      position: absolute;
+                      width: 10px;
+                      height: 10px;
+                      border-bottom: thin solid;
+                      border-left: thin solid;
+                      left: -6px;
+                      background-color: #fff;
+                      transform: rotate(45deg);
+                    }
+                  }
+                  & .pull-left {
+                    float: left;
+                    margin-right: 10px;
+                  }
+                  & .pull-right {
+                    float: right;
+                    margin-left: 10px;
+                  }
+                  & .thread-body {
+                    color: #686C72;
+                    margin-left: 43px;
+                    width: 85%;
+                    padding: 23px 37px;
+                    border: thin solid #050060;
+                    border-radius: 0 0 5px 5px;
+                    border-top: 0;
+                  }
+                }
+              }
             }
           }
           img.quote {
