@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Support - New Ticket</title>
+    <link href="assets/libraries/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="ClientPage">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar col-sm-12 col-md-4">
+            </div>
+            <div class="content col-sm-12 col-md-8 row">
+                <div class="branding col-sm-12 col-md-2">
+                    <div class="support-logo">
+                        <img src="assets/images/support-logo.svg" alt="support logo">
+                    </div>
+                    <div class="creators-logos">
+                        <img src="assets/images/demokritos-logo.png" alt="demokritos logo">
+                        <img src="assets/images/egovlogo.svg" alt="egov logo" class="egov-logo">
+                    </div>
+                </div>
+                <div class="main-content col-sm-12 col-md-10">
+                    <div class="main-content--header">
+                        <div class="header-left">
+                            <a href="index.html" class="support-btn img-btn">
+                                <img src="assets/images/icon-home.svg" alt="icon home">
+                            </a>
+                            <a href="#" class="support-btn active">
+                                ΝΕΟ ΑΙΤΗΜΑ
+                            </a>
+                            <a href="ticket-status.html" class="support-btn">
+                                ΕΞΕΛΙΞΗ ΑΙΤΗΜΑΤΟΣ
+                            </a>
+                        </div>
+                        <div class="header-right">
+                            <a class="flag flag-gr" href="?lang=el" title="Ελληνικά (Greek)"><img src="assets/images/flag-el.svg" alt="greek flag"></a>
+                            <a class="flag flag-us" href="?lang=en_US" title="English (United States)"><img src="assets/images/flag-en.svg" alt="english flag"></a>
+                            <a class="sign-in support-btn" href="login.html">ΕΙΣΟΔΟΣ <img src="assets/images/sign-in.svg" alt="sign-in icon"></a>
+                        </div>
+
+                    </div>
+                    <div class="main-content--body inner-page">
+                        <!-- Content Body Start -->
+
+                        <h1>Νέο αίτημα</h1>
+                        <div class="form-container">
+                            <form action="/" method="post" class="row">
+                                <div class="form-field col-sm-12 col-md-6">
+                                    <label for="firstName" class="form-label">Όνομα</label>
+                                    <input type="text" name="firstName" placeholder="Παρακαλώ συμπληρώστε το όνομά σας εδώ" id="firstName" class="form-control"/>
+                                </div>
+                                <div class="form-field col-sm-12 col-md-6">
+                                    <label for="lastName" class="form-label">Επώνυμο</label>
+                                    <input type="text" name="lastName" placeholder="Παρακαλώ συμπληρώστε το επίθετό σας εδώ" id="lastName" class="form-control"/>
+                                </div>
+                                <div class="form-field col-sm-12">
+                                    <label for="email" class="form-label">Υπηρεσιακό Email</label>
+                                    <input type="email" name="email" placeholder="Παρακαλώ πληκτρολογήστε το υπηρεσιακό email σας εδώ" id="email" class="form-control"/>
+                                </div>
+                                <div class="form-field col-sm-12 col-md-6">
+                                    <label for="tmima" class="form-label" >Τμήμα</label>
+                                    <select name="tmima" id="tmima" class="form-select">
+                                        <option value="">Παρακαλώ επιλέξτε τμήμα</option>
+                                        <option value="18">Τμήμα 1</option>
+                                        <option value="70">Τμήμα 2</option>
+                                        <option value="16">Τμήμα 3</option>
+                                        <option value="58">Τμήμα 4</option>
+                                    </select>
+
+                                </div>
+                                <div class="form-field col-sm-12 col-md-6">
+                                    <label for="aitima" class="form-label">Αίτημα</label>
+                                    <select name="aitima" id="aitima" class="form-select">
+                                        <option value="">Παρακαλώ επιλέξτε αίτημα</option>
+                                        <option value="18">Αναφορά Προβλήματος / Αναφορά κακόβουλου email</option>
+                                        <option value="70">Αναφορά Προβλήματος / Πρόσβαση στο δίκτυο / Internet</option>
+                                        <option value="16">Αναφορά Προβλήματος / Είσοδος στον Πάπυρο (Ηλ. Πρωτόκολλο)</option>
+                                        <option value="58">Αναφορά Προβλήματος / Πάπυρος (Ηλ.Πρωτόκολλο)</option>
+                                    </select>
+                                </div>
+                                <div class="form-field col-sm-12">
+                                    <label for="description" class="for-label">Περιγραφή</label>
+                                    <textarea name="description" id="description" class="form-control" placeholder="Παρακαλώ περιγράψτε με λίγα λόγια το αίτημά σας"></textarea>
+                                </div>
+                                <div class="btn-container col-sm-12">
+                                    <input type="submit" value="ΚΑΤΑΧΩΡΗΣΗ ΑΙΤΗΜΑΤΟΣ" class="support-btn">
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Content Body End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="agent-login">
+        <a href="/scp/" >
+            <img src="assets/images/agent.svg" alt="agent">
+            <span>AGENT LOGIN</span>
+        </a>
+    </div>
+</div>
+<script src="assets/libraries/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

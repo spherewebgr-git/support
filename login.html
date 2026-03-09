@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support - Login</title>
+  <link href="assets/libraries/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="ClientPage">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="sidebar col-sm-12 col-md-4">
+      </div>
+      <div class="content col-sm-12 col-md-8 row">
+        <div class="branding col-sm-12 col-md-2">
+          <div class="support-logo">
+            <img src="assets/images/support-logo.svg" alt="support logo">
+          </div>
+          <div class="creators-logos">
+            <img src="assets/images/demokritos-logo.png" alt="demokritos logo">
+            <img src="assets/images/egovlogo.svg" alt="egov logo" class="egov-logo">
+          </div>
+        </div>
+        <div class="main-content col-sm-12 col-md-10">
+          <div class="main-content--header">
+            <div class="header-left">
+              <a href="index.html" class="support-btn img-btn">
+                <img src="assets/images/icon-home.svg" alt="icon home">
+              </a>
+              <a href="new-ticket.html" class="support-btn">
+                ΝΕΟ ΑΙΤΗΜΑ
+              </a>
+              <a href="ticket-status.html" class="support-btn">
+                ΕΞΕΛΙΞΗ ΑΙΤΗΜΑΤΟΣ
+              </a>
+            </div>
+            <div class="header-right">
+              <a class="flag flag-gr" href="?lang=el" title="Ελληνικά (Greek)"><img src="assets/images/flag-el.svg" alt="greek flag"></a>
+              <a class="flag flag-us" href="?lang=en_US" title="English (United States)"><img src="assets/images/flag-en.svg" alt="english flag"></a>
+              <a class="sign-in support-btn active" href="login.html">ΕΙΣΟΔΟΣ <img src="assets/images/sign-in.svg" alt="sign-in icon"></a>
+            </div>
+
+          </div>
+          <div class="main-content--body inner-page">
+            <!-- Content Body Start -->
+
+            <h1>Είσοδος</h1>
+            <div class="form-container">
+              <form action="/" method="post" class="row">
+                <div class="form-field col-sm-12 col-md-6">
+                  <label for="email" class="form-label">Υπηρεσιακό Εmail</label>
+                  <input type="email" name="email" placeholder="Παρακαλώ πληκτρολογήστε το email σας εδώ" id="email" class="form-control"/>
+                </div>
+                <div class="col-sm-12"></div>
+                <div class="form-field col-sm-12 col-md-6">
+                  <label for="password" class="form-label">Κωδικός</label>
+                  <input type="password" name="password" placeholder="Παρακαλώ πληκτρολογήστε τον κωδικό σας εδώ" id="password" class="form-control"/>
+                </div>
+                <div class="btn-container col-sm-12">
+                  <input type="submit" value="ΕΙΣΟΔΟΣ" class="support-btn">
+                </div>
+              </form>
+            </div>
+
+            <!-- Content Body End -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="agent-login">
+  <a href="/scp/" >
+    <img src="assets/images/agent.svg" alt="agent">
+    <span>AGENT LOGIN</span>
+  </a>
+</div>
+</div>
+<script src="assets/libraries/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

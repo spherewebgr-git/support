@@ -31,6 +31,11 @@ body {
     border-radius: 5px;
     background-color: $white;
     transition: $transition;
+    &.active {
+      background-color: $colour3;
+      color: $white;
+      transition: $transition;
+    }
     &:hover {
       background-color: $colour3;
       color: $white;
@@ -39,6 +44,12 @@ body {
     &.img-btn {
       padding: 13px 25px;
       transition: $transition;
+      &.active {
+        & img {
+          filter: brightness(0) invert(1);
+          transition: $transition;
+        }
+      }
       &:hover {
         background-color: $colour3;
         transition: $transition;
@@ -54,6 +65,12 @@ body {
       gap: 19px;
       border: none;
       transition: $transition;
+      &.active {
+        & img {
+          filter: brightness(0) invert(1);
+          transition: $transition;
+        }
+      }
       &:hover {
         background-color: $colour3;
         transition: $transition;
@@ -64,25 +81,28 @@ body {
       }
     }
   }
-  #ClientPage {
-    .agent-login {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      a {
-        color: $colour3;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        font-weight: 800;
-        text-decoration: none;
-        span {
-          display: inline-block;
-          margin-top: 8px;
-        }
+
+  .agent-login {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    a {
+      color: $colour3;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 800;
+      text-decoration: none;
+      span {
+        display: inline-block;
+        margin-top: 8px;
       }
     }
+  }
+
+  #ClientPage {
+
     .sidebar {
       background: #04005A;
       background-image: url(../images/sidebar-graphic.svg);
@@ -163,7 +183,12 @@ body {
           height: 85vh;
           overflow-x: hidden;
           overflow-y: auto;
-          padding-left: 80px;
+          padding: 0 20px 0 80px;
+          &.inner-page {
+            h1 {
+              margin-bottom: 30px;
+            }
+          }
           img.quote {
             margin: 68px 0 0 0;
           }
@@ -185,6 +210,37 @@ body {
           }
 
         }
+      }
+    }
+  }
+
+
+  .form-container {
+
+      padding-bottom: 50px;
+    .form-field {
+      label {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 11px;
+        color: $colour3;
+      }
+      input {
+        &[type="text"],
+        &[type="email"],
+        &[type="password"]{
+          padding: 20px;
+          margin-bottom: 30px;
+        }
+      }
+      select {
+        margin-bottom: 30px;
+        padding: 20px;
+      }
+      textarea {
+        padding: 20px;
+        margin-bottom: 30px;
+        min-height: 135px;
       }
     }
   }
