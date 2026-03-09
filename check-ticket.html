@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Support - Login</title>
+    <title>Support - Έλεγχος Αιτήματος</title>
     <link href="assets/libraries/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/filedrop.css" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet">
 </head>
 
@@ -12,10 +13,8 @@
 <div id="ClientPage">
     <div class="container-fluid">
         <div class="row">
-            <div class="sidebar col-sm-12 col-md-4">
-            </div>
-            <div class="content col-sm-12 col-md-8 row">
-                <div class="branding col-sm-12 col-md-2">
+            <div class="sidebar col-sm-12 col-md-3">
+                <div class="branding">
                     <div class="support-logo">
                         <img src="assets/images/support-logo.svg" alt="support logo">
                     </div>
@@ -24,6 +23,9 @@
                         <img src="assets/images/egovlogo.svg" alt="egov logo" class="egov-logo">
                     </div>
                 </div>
+            </div>
+            <div class="content col-sm-12 col-md-9 row">
+
                 <div class="main-content col-sm-12 col-md-10">
                     <div class="main-content--header">
                         <div class="header-left">
@@ -42,7 +44,7 @@
                                     src="assets/images/flag-el.svg" alt="greek flag"></a>
                             <a class="flag flag-us" href="?lang=en_US" title="English (United States)"><img
                                     src="assets/images/flag-en.svg" alt="english flag"></a>
-                            <a class="sign-in support-btn active" href="login.html">ΕΙΣΟΔΟΣ <img
+                            <a class="sign-in support-btn" href="login.html">ΕΙΣΟΔΟΣ <img
                                     src="assets/images/sign-in.svg" alt="sign-in icon"></a>
                         </div>
 
@@ -134,7 +136,7 @@
                                 <div class="thread-entry message avatar">
     <span class="pull-left avatar">
 <img class="avatar" alt="Avatar"
-     src="assets/images/vas-image.png">    </span>
+     src="assets/images/vas.svg">    </span>
                                     <div class="header">
                                         <div class="pull-right">
             <span style="vertical-align:middle;" class="textra">
@@ -158,7 +160,7 @@
           <i class="faded icon-magic"></i>
         </span>
                                 <span class="faded description">Created by <b><img class="avatar" alt="Avatar"
-                                                                                   src="assets/images/vas-image.png">Vassiliki Kiriakidou</b> <time
+                                                                                   src="assets/images/vas.svg">Vassiliki Kiriakidou</b> <time
                                         datetime="2026-03-05T07:46:18+00:00" data-toggle="tooltip"
                                         title="Πέμ, 5 Μαρ 2026 09:46">05/03/2026 09:46</time></span>
                             </div>
@@ -189,7 +191,7 @@
                                 <div class="thread-entry message avatar">
     <span class="pull-left avatar">
 <img class="avatar" alt="Avatar"
-     src="assets/images/vas-image.png">    </span>
+     src="assets/images/vas.svg">    </span>
                                     <div class="header">
                                         <div class="pull-right">
             <span style="vertical-align:middle;" class="textra">
@@ -326,22 +328,6 @@
                                                 style="display: none; width: 0px; height: 0px;" accept="">
                                     </div>
                                 </div>
-                                <script type="text/javascript">
-                                    $(function () {
-                                        $('#acf0d0e4486457e0d10fde .dropzone').filedropbox({
-                                            url: 'ajax.php/form/upload/ticket/attach',
-                                            link: $('#acf0d0e4486457e0d10fde').find('a.manual'),
-                                            paramname: 'upload[]',
-                                            fallback_id: 'file-acf0d0e4486457e0d10fde',
-                                            allowedfileextensions: [],
-                                            allowedfiletypes: [],
-                                            maxfiles: 20,
-                                            maxfilesize: 10,
-                                            name: 'c98c76698f9bab[]',
-                                            files: []
-                                        });
-                                    });
-                                </script>
                             </div>
                             <p style="text-align:center">
                                 <input type="submit" value="Post Reply">
@@ -349,10 +335,6 @@
                                 <input type="button" value="Cancel" onclick="history.go(-1)">
                             </p>
                             <input type="hidden" name="draft_id"></form>
-                        <script type="text/javascript">
-                            showImagesInline([]);
-                        </script>
-                        <link rel="stylesheet" type="text/css" href="/css/filedrop.css">
 
                         <!-- Content Body End -->
                     </div>
@@ -368,7 +350,22 @@
     </a>
 </div>
 </div>
+<script src="assets/js/jquery.min.js"></script>
 <script src="assets/libraries/bootstrap/bootstrap.bundle.min.js"></script>
+<script>
+    $t = jQuery.noConflict();
+
+    $t(document).ready(function(){
+        $t('.main-content--body').scroll(function () {
+            console.log($t(this).scrollTop())
+            if ($t(this).scrollTop() < 200) {
+                $t(".main-content--header").removeClass("add-shadow", 1000);
+            }
+            else
+                $t(".main-content--header").addClass("add-shadow", 1000);
+        });
+    });
+</script>
 </body>
 
 
