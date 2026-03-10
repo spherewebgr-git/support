@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Support - Feedback Form</title>
+    <link href="assets/libraries/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/toastify.min.css" rel="stylesheet">
+    <link href="assets/css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="ClientPage">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar col-sm-12 col-md-3">
+                <div class="branding">
+                    <div class="support-logo">
+                        <img src="assets/images/support-logo.svg" alt="support logo">
+                    </div>
+                    <div class="creators-logos">
+                        <img src="assets/images/demokritos-logo.png" alt="demokritos logo">
+                        <img src="assets/images/egovlogo.svg" alt="egov logo" class="egov-logo">
+                    </div>
+                </div>
+            </div>
+            <div class="content col-sm-12 col-md-9 row">
+                <div class="main-content col-sm-12 col-md-10">
+                    <div class="main-content--header">
+                        <div class="header-left">
+                            <a href="/" class="support-btn img-btn active">
+                                <img src="assets/images/icon-home.svg" alt="icon home">
+                            </a>
+                            <a href="new-ticket.html" class="support-btn">
+                                ΝΕΟ ΑΙΤΗΜΑ
+                            </a>
+                            <a href="ticket-status.html" class="support-btn">
+                                ΕΞΕΛΙΞΗ ΑΙΤΗΜΑΤΟΣ
+                            </a>
+                        </div>
+                        <div class="header-right">
+                            <a class="flag flag-gr" href="?lang=el" title="Ελληνικά (Greek)"><img
+                                    src="assets/images/flag-el.svg" alt="greek flag"></a>
+                            <a class="flag flag-us" href="?lang=en_US" title="English (United States)"><img
+                                    src="assets/images/flag-en.svg" alt="english flag"></a>
+                            <a class="sign-in support-btn" href="login.html">ΕΙΣΟΔΟΣ <img
+                                    src="assets/images/sign-in.svg" alt="sign-in icon"></a>
+                        </div>
+
+                    </div>
+                    <div class="main-content--body">
+                        <h1>Ερωτηματολόγιο</h1>
+                        <form id="test" class="feedback-form col-sm-12 row" action="handleFeedback.php" method="post">
+                            <div class="feedback-form-ratios">
+                                <ul>
+                                    <li>Λίγο</li>
+                                    <li>Πολύ</li>
+                                </ul>
+                            </div>
+                            <div class="feedback-form-field col-sm-12 field-1">
+                                <div class="step">1</div>
+                                <div class="question">Πόσο ικανοποιημένος/η είστε από την εξυπηρέτηση που λάβατε;</div>
+                                <div class="rating-values">
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio1Default1">
+                                            <input class="check-input" type="radio" name="rating[1]" data-field="1" id="radio1Default1" required value="1">1</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="radio1Default2"><input class="check-input" type="radio" name="rating[1]"
+                                                                                                     data-field="1"  id="radio1Default2" value="2">2</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="radio1Default3"><input class="check-input" type="radio" name="rating[1]"
+                                                                                                     data-field="1"  id="radio1Default3">3</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="radio1Default4"><input class="check-input" type="radio" name="rating[1]"
+                                                                                                     data-field="1"  id="radio1Default4">4</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label" for="radio1Default5"><input class="check-input" type="radio" name="rating[1]"
+                                                                                                     data-field="1"    id="radio1Default5">5</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feedback-form-field col-sm-12 field-2">
+                                <div class="step">2</div>
+                                <div class="question">Λύθηκε το πρόβλημά σας;</div>
+                                <div class="rating-values">
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio2Default1">1 <input class="check-input" type="radio" name="rating[question2]"
+                                                                                                     data-field="2" id="radio2Default1" required></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio2Default2">2 <input class="check-input" type="radio" name="rating[question2]"
+                                                                                                     data-field="2"    id="radio2Default2"></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio2Default3">3 <input class="check-input" type="radio" name="rating[question2]"
+                                                                                                     data-field="2"   id="radio2Default3"></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio2Default4">4 <input class="check-input" type="radio" name="rating[question2]"
+                                                                                                     data-field="2"   id="radio2Default4"></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio2Default5">5 <input class="check-input" type="radio" name="rating[question2]"
+                                                                                                     data-field="2"  id="radio2Default5" value="5"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feedback-form-field col-sm-12 field-3">
+                                <div class="step">3</div>
+                                <div class="question">Πόσο ικανοποιημένος/η είστε από τον χρόνο ανταπόκρισης;</div>
+                                <div class="rating-values">
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio3Default1">1 <input class="check-input" type="radio" name="rating[3]"
+                                                                                                      data-field="3" id="radio3Default1" required></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio3Default2">2 <input class="check-input" type="radio" name="rating[3]"
+                                                                                                      data-field="3" id="radio3Default2"></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio3Default3">3 <input class="check-input" type="radio" name="rating[3]"
+                                                                                                      data-field="3" id="radio3Default3"></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio3Default4">4 <input class="check-input" type="radio" name="rating[3]"
+                                                                                                      data-field="3" id="radio3Default4"></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio3Default5">5 <input class="check-input" type="radio" name="rating[3]"
+                                                                                                      data-field="3" id="radio3Default5"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feedback-form-field col-sm-12 field-4">
+                                <div class="step">4</div>
+                                <div class="question">Ήταν η επικοινωνία σαφής και κατανοητή;</div>
+                                <div class="rating-values">
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio4Default1">1 <input class="check-input" type="radio" name="rating[4]"
+                                                                                                      data-field="4"  id="radio4Default1" required></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio4Default2">2 <input class="check-input" type="radio" name="rating[4]"
+                                                                                                      data-field="4"  id="radio4Default2"></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio4Default3">3 <input class="check-input" type="radio" name="rating[4]"
+                                                                                                      data-field="4"  id="radio4Default3"></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio4Default4">4 <input class="check-input" type="radio" name="rating[4]"
+                                                                                                      data-field="4"  id="radio4Default4"></label>
+                                    </div>
+                                    <div class="form-check">
+
+                                        <label class="form-check-label" for="radio4Default5">5 <input class="check-input" type="radio" name="rating[4]"
+                                                                                                      data-field="4"  id="radio4Default5"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="feedback-form-field answer col-sm-12">
+                                <div class="step">5</div>
+                                <div class="question">Έχετε κάποια πρόταση για βελτίωση;</div>
+                                <label for="improvements" class="form-label"></label>
+                                <textarea  id="improvements" name="improvements" placeholder="Παρακαλώ περιγράψτε με λίγα λόγια την πρότασή σας"></textarea>
+                            </div>
+                            <div class="feedback-form-button">
+                                <input type="submit" value="ΥΠΟΒΟΛΗ" class="support-btn">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="agent-login">
+        <a href="/scp/">
+            <img src="assets/images/agent.svg" alt="agent">
+            <span>AGENT LOGIN</span>
+        </a>
+    </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/toastify-js.js"></script>
+<script src="assets/libraries/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/js/theme.js"></script>
+<script>
+    $f = jQuery.noConflict();
+    $f(document).ready(function() {
+        $f('input[type="radio"]').on("change", function() {
+            let field = $f(this).attr('data-field');
+            console.log(field);
+            $f('.field-'+field+' label').removeClass('active');
+            $f(this).parent('label').addClass("active");
+
+            $f(this).closest('.feedback-form-field').children('.step').addClass("filled");
+
+        });
+        $f('textarea').on("keydown", function() {
+            let content = $f(this).val().trim();
+            let textLength = content.length;
+           // console.log(textLength);
+            if(textLength > 3){
+                $f(this).closest('.feedback-form-field').children('.step').addClass("filled");
+            } else {
+                $f(this).closest('.feedback-form-field').children('.step').removeClass("filled");
+            }
+        });
+    })
+
+</script>
+</body>
+
+</html>

@@ -352,20 +352,8 @@
 </div>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/libraries/bootstrap/bootstrap.bundle.min.js"></script>
-<script>
-    $t = jQuery.noConflict();
+<script src="assets/js/theme.js"></script>
 
-    $t(document).ready(function(){
-        $t('.main-content--body').scroll(function () {
-            console.log($t(this).scrollTop())
-            if ($t(this).scrollTop() < 200) {
-                $t(".main-content--header").removeClass("add-shadow", 1000);
-            }
-            else
-                $t(".main-content--header").addClass("add-shadow", 1000);
-        });
-    });
-</script>
 </body>
 
 
