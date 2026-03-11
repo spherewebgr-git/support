@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="461" height="82" viewBox="0 0 461 82">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Union_11" data-name="Union 11" d="M18.6,82v-.1A20.231,20.231,0,0,1,0,61.977V18.117H.094A20.3,20.3,0,0,1,18.6.089V.006h1.461q.249-.006.5-.006c.164,0,.324,0,.486.006H439.955c.164,0,.326-.006.49-.006s.33,0,.5.006H442.4V.089a20.3,20.3,0,0,1,18.5,18.028H461v43.86a20.235,20.235,0,0,1-18.6,19.933V82Z" transform="translate(40.031 802)" fill="#050060"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-40.031 -802)" clip-path="url(#clip-path)">
+    <path id="Path_27463" data-name="Path 27463" d="M75-.005s127.87.178,173.563,0,44.3,35.257,79.173,35.257c33.168,0,33-34.993,78.3-35.257s192.983,0,192.983,0V104.223H75Z" transform="translate(-59.986 801.877)" fill="#050060"/>
+  </g>
+</svg>
