@@ -1,4 +1,13 @@
 <?php
+require_once(__DIR__.'/bootstrap.php');
+
+if ($_POST) {
+    $date = now();
+    $name = db_input($_POST['name']);
+    $msg  = db_input($_POST['message']);
+
+    db_query("INSERT INTO ost_feedback (`name`,`message`) VALUES ($name,$msg)");
+}
 
 $to      = 'spherewebgr@gmail.com';
 $subject = 'Νέα Υποβολή Ερωτηματολογίου σχετικά με το Support';
